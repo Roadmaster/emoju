@@ -1,9 +1,6 @@
 # last -> final
 # lang  -> tongue
 
-oldIFS=${IFS}
-IFS=","
-
 declare -A emoji
 while IFS=, read -r -a array
 do
