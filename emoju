@@ -19,12 +19,9 @@ substitutions = {
 args = ['juju']
 
 
-# args.extend([ word.replace(emoji.meaning) for word in sys.argv[1:]])
-# FIXME: Do the below in one line ;)
 for word in sys.argv[1:]:
     for emoji, meaning in substitutions.items():
         word = word.replace(emoji, meaning)
     args.append(word)
 
 print(" ".join(args))
-
