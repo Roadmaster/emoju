@@ -2,22 +2,25 @@
 import sys
 
 
-# thinking_face
-# face_with_medical_mask
-# clipboard
-# face_vomiting
-# hammer_and_wrench
 substitutions = {
-    "🤔": "status",
-    "🏁": "deploy",
-    "🛠": "config",
-    "😷": "debug-logs",
-    "📋": "tabular",
-    "🤮": "yaml",
+    "🤔": "status",  # thinking_face
+    "🏁": "deploy",  # chequered_flag
+    "🛠": "config",  # hammer_and_wrench
+    "😷": "debug-logs",  # face_with_medical_mask
+    "📋": "tabular",  # clipboard
+    "🤮": "yaml",  # face_vomiting
+    "😱": "json",  # face_screaming
+    "🔥": "remove-unit",  # fire (need to disamb)
+    "✨": "something",  # sparkles
+    "👊": "force",  # oncoming_fist
+
 }
 
 args = ['juju']
 
+
+# args.extend([ word.replace(emoji.meaning) for word in sys.argv[1:]])
+# FIXME: Do the below in one line ;)
 for word in sys.argv[1:]:
     for emoji, meaning in substitutions.items():
         word = word.replace(emoji, meaning)
