@@ -28,7 +28,7 @@ comple(){
     # This helps resolving word to emoji when there are still more matches but
     # I have what I need.
     #if [ $LAST_COMP_TYPE = 63 ] && [ $COMP_TYPE = 63 ]; then
-    #    echo "RESOLVE TO ${COMPREPLY[0]}"
+    #    echo "RESOLVE TO ${COMPREPLY[0]} [${COMPREPLY[@]}]"
     #fi
     #LAST_COMP_TYPE=$COMP_TYPE
     # If we only have one key match, resolve the matching emoji value and
