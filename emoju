@@ -8,7 +8,7 @@ substitutions = {
     "🤔": "status",  # thinking_face
     "🏁": "deploy",  # chequered_flag
     "🛠": "config",  # hammer_and_wrench
-    "😷": "debug-logs",  # face_with_medical_mask
+    "😷": "debug-log",  # face_with_medical_mask
     "📋": "tabular",  # clipboard
     "🤮": "yaml",  # face_vomiting
     "😱": "json",  # face_screaming
