@@ -16,7 +16,7 @@ substitutions = {
     "✨": "add-model",  # sparkles
     "🤝": "add-relation",  # handshake
     "🧯": "resolved",  # fire_extinguisher
-    "☠️ ": "remove-machine",  # skull_and_crossbones
+    "☠️": "remove-machine",  # skull_and_crossbones
     "👊": "force",  # oncoming_fist
 
 }
