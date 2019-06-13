@@ -1,0 +1,40 @@
+We all use lots of command-line tools, often to be ridiculed by GUI-oriented
+users making fun of our terminals. This is particularly notable if you do
+devops or system tasks, since these days even text editors have fancy GUIs
+but CLI utils have been sadly neglected.
+
+So I thought: What if we can bring these tools gloriously into the 21st
+century?
+
+And which better tool to modernize than the much-loved juju?
+
+WIth that in mind, I present: emoju, an emoji-based version of juju where all
+commands have been replaced with emoji. Here's how it works.
+
+#How to run the presentation
+$ cd emojiland or whatever
+$ . complete2.sh
+$ export PATH=$PWD:$PATH
+$ cd
+$ clear
+# Now ready to run
+$ export EMOJU_REAL=yes  # optional
+
+
+Let's run through a typical deployment workflow using emoju. For expediency
+it won't run the actual juju equivalents, just show them so you can confirm
+the equivalences.
+
+juju sparkles<tab> wordpress
+juju chequer<tab> cs:wordpress
+juju chequer<tab> cs:mysql --series=xenial
+juju handsh<tab> wordpress mysql
+juju think<tab>
+juju think<tab> --format=face_screaming
+juju wren<rtab> wordpress debug=yes
+# Things will break with debug=yes
+juju think<tab>
+juju fire_ex<tab> wordpress/0
+juju explo<tab> wordpress/0
+#nothing works, let's kill the machine
+juju skull_and_cro<tab> 
