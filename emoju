@@ -12,7 +12,7 @@ substitutions = {
     "📋": "tabular",  # clipboard
     "🤮": "yaml",  # face_vomiting
     "😱": "json",  # face_screaming
-    "🔥": "remove-unit",  # fire (need to disamb)
+    "🤯": "remove-unit",  # exploding_head
     "✨": "add-model",  # sparkles
     "🤝": "add-relation",  # handshake
     "🧯": "resolved",  # fire_extinguisher
