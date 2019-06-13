@@ -7,7 +7,7 @@ import sys
 substitutions = {
     "🤔": "status",  # thinking_face
     "🏁": "deploy",  # chequered_flag
-    "🛠": "config",  # hammer_and_wrench
+    "🔧": "config",  # wrench
     "😷": "debug-log",  # face_with_medical_mask
     "📋": "tabular",  # clipboard
     "🤮": "yaml",  # face_vomiting
