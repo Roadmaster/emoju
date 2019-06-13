@@ -11,7 +11,9 @@ substitutions = {
     "🤮": "yaml",  # face_vomiting
     "😱": "json",  # face_screaming
     "🔥": "remove-unit",  # fire (need to disamb)
-    "✨": "something",  # sparkles
+    "✨": "add-model",  # sparkles
+    "🤝": "add-relation",  # handshake
+    "🧯": "resolved",  # fire_extinguisher
     "👊": "force",  # oncoming_fist
 
 }
