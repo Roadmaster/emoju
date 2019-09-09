@@ -28,20 +28,31 @@ $ export EMOJU_REAL=yes  # optional
 # cd emoju
 
 
+juju model-config http-proxy=http://192.168.1.187:3128
+juju model-config https-proxy=http://192.168.1.187:3128
+
+############## SCRIPT STARTS HERE ##########################
+
+
 Let's run through a typical deployment workflow using emoju. For expediency
 it won't run the actual juju equivalents, just show them so you can confirm
 the equivalences.
 
 emoju sparkles<tab> wordpress    # add-model
-emoju chequer<tab> cs:wordpress
+emoju chequer<tab> cs:wordpress   # deploy
 emoju chequer<tab> cs:mysql --series=xenial
-emoju handsh<tab> wordpress mysql
-emoju think<tab>
-emoju think<tab> --format=face_screaming
-emoju wren<rtab> wordpress debug=yes
+emoju handsh<tab> wordpress mysql # add-relation
+emoju think<tab>  # status
+emoju think<tab> --format=face_screaming # json
+
+#  Let's switch to a pre-prepared model
+
+emoju switch wordpress-step2
+
+emoju wren<rtab> wordpress debug=yes  # config
 # Things will break with debug=yes
 emoju think<tab>
-emoju fire_ex<tab> wordpress/0
-emoju explo<tab> wordpress/0
+emoju thumbs_up<tab> wordpress/0  #resolved
+emoju explo<tab> wordpress/0  # remove-application
 #nothing works, let's kill the machine
-emoju skull_and_cro<tab> 0
+emoju skull_and_cro<tab> 0  # remove-machine
