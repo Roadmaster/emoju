@@ -19,6 +19,7 @@ substitutions = {
     "👍": "resolved",  # thumbs_up
     "☠️": "remove-machine",  # skull_and_crossbones
     "👊": "force",  # oncoming_fist
+    "🎛️": "switch",  # control_knobs
 
 }
 
