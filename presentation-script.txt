@@ -20,21 +20,28 @@ $ clear
 # Now ready to run
 $ export EMOJU_REAL=yes  # optional
 
+# If it's a 10-minute presentation, maybe do this with real juju, if have access to the big server.
+# If not, just show the translations
+# To access sonar:
+# mosh --ssh="ssh -p 22222" --port=22223:22230 192.222.154.199
+# from there ssh ubuntu@juju-demo.local
+# cd emoju
+
 
 Let's run through a typical deployment workflow using emoju. For expediency
 it won't run the actual juju equivalents, just show them so you can confirm
 the equivalences.
 
-juju sparkles<tab> wordpress
-juju chequer<tab> cs:wordpress
-juju chequer<tab> cs:mysql --series=xenial
-juju handsh<tab> wordpress mysql
-juju think<tab>
-juju think<tab> --format=face_screaming
-juju wren<rtab> wordpress debug=yes
+emoju sparkles<tab> wordpress    # add-model
+emoju chequer<tab> cs:wordpress
+emoju chequer<tab> cs:mysql --series=xenial
+emoju handsh<tab> wordpress mysql
+emoju think<tab>
+emoju think<tab> --format=face_screaming
+emoju wren<rtab> wordpress debug=yes
 # Things will break with debug=yes
-juju think<tab>
-juju fire_ex<tab> wordpress/0
-juju explo<tab> wordpress/0
+emoju think<tab>
+emoju fire_ex<tab> wordpress/0
+emoju explo<tab> wordpress/0
 #nothing works, let's kill the machine
-juju skull_and_cro<tab> 
+emoju skull_and_cro<tab> 0
