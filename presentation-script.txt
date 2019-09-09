@@ -47,7 +47,7 @@ emoju think<tab> --format=face_screaming # json
 
 #  Let's switch to a pre-prepared model
 
-emoju switch wordpress-step2
+emoju control<tab> wordpress-step2 # switch
 
 emoju wren<rtab> wordpress debug=yes  # config
 # Things will break with debug=yes
